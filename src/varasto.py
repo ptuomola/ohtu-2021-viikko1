@@ -7,8 +7,6 @@ class Varasto:
         if self.saldo > self.tilavuus:
             self.saldo = self.tilavuus
 
-# this line is way tooo long 123123123123123123123123213123213123123213213123213213123123123123231232312131321323
-
     def init_tilavuus(self, tilavuus):
         if tilavuus < 0.0:
             self.tilavuus = 0
