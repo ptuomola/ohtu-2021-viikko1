@@ -40,12 +40,12 @@ class TestVarasto(unittest.TestCase):
         self.assertAlmostEqual(self.varasto.paljonko_mahtuu(), 4)
 
     def test_negatiivinen_tilavuus(self):
-        vaaraVarasto = Varasto(-1)
-        self.assertEqual(vaaraVarasto.tilavuus, 0.0)
+        vaara_varasto = Varasto(-1)
+        self.assertEqual(vaara_varasto.tilavuus, 0.0)
 
     def test_negatiivinen_alkusaldo(self):
-        vaaraVarasto = Varasto(123,-1)
-        self.assertEqual(vaaraVarasto.saldo, 0.0)
+        vaara_varasto = Varasto(123,-1)
+        self.assertEqual(vaara_varasto.saldo, 0.0)
 
     def test_lisaa_negatiivinen_maara(self):
         self.varasto.lisaa_varastoon(-1)
@@ -67,4 +67,3 @@ class TestVarasto(unittest.TestCase):
 
     def test_str(self):
         self.assertEqual("saldo = 0, vielä tilaa 10", str(self.varasto))
-
