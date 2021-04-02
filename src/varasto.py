@@ -1,14 +1,21 @@
 #adding a test comment
 class Varasto:
     def __init__(self, tilavuus, alku_saldo = 0.0):
+        self.init_saldo(alku_saldo)
+        self.init_tilavuus(tilavuus)
+
         if self.saldo > self.tilavuus:
             self.saldo = self.tilavuus
 
+# this line is way tooo long 123123123123123123123123213123213123123213213123213213123123123123231232312131321323
+
+    def init_tilavuus(self, tilavuus):
         if tilavuus < 0.0:
             self.tilavuus = 0
         else:
             self.tilavuus = tilavuus
 
+    def init_saldo(self, alku_saldo):
         if alku_saldo > 0.0:
             self.saldo = alku_saldo
         else:
